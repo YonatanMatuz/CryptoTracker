@@ -1,0 +1,108 @@
+#coinInfo {
+  display: none;
+}
+body{
+  margin: 0;
+  overflow-y: hidden;
+  background-image: url(images/Background_2.jpg);
+  background-repeat: repeat;
+}
+.title{
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+.joketitle{
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+.wrapper{
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 100px;
+}
+header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.background{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateZ(-100px)scale(2);
+}
+.navbar{
+  background-image: linear-gradient(#e0eafc,#cfdef3);
+}
+#rootContainer{
+  margin: auto;
+}
+.card{
+  margin:5px;
+  background-image: linear-gradient(#d3cce3,#e9e4f0);
+}
+.form-check{
+  position: absolute;
+  margin-left: 70%;
+  
+  width: 24px;
+}
+.card-title{
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  .title{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+  }
+  .joketitle{
+    font-size: 1rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+  }
+  #rootContainer{
+    margin-left: 1.5rem;
+  }
+}
+@media (max-width: 568px){
+  .title{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+  }
+  .joketitle{
+    font-size: 1rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+  }
+  #rootContainer{
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 992px){
+  .title{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+  }
+  .joketitle{
+    font-size: 1rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+  }
+  #rootContainer{
+    margin-left: 1.5rem;
+  }
+}
